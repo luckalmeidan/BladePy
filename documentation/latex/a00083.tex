@@ -1,0 +1,65 @@
+\hypertarget{a00083}{}\section{data\+\_\+structure.\+case\+\_\+model.\+Case\+Model Class Reference}
+\label{a00083}\index{data\+\_\+structure.\+case\+\_\+model.\+Case\+Model@{data\+\_\+structure.\+case\+\_\+model.\+Case\+Model}}
+
+
+This is a creation of a model for the tree view list.  
+
+
+
+
+Inheritance diagram for data\+\_\+structure.\+case\+\_\+model.\+Case\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{a00082}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{a00083_a7961b552537902b9236c2ded9cbfbc63}{}\label{a00083_a7961b552537902b9236c2ded9cbfbc63} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, root, parent=None)
+\item 
+\hypertarget{a00083_a44b390eef57be2a4883c1e6599b5a8ca}{}\label{a00083_a44b390eef57be2a4883c1e6599b5a8ca} 
+def {\bfseries row\+Count} (self, parent)
+\item 
+\hypertarget{a00083_a132b1b7d95f07cae505b40b7fdeb4545}{}\label{a00083_a132b1b7d95f07cae505b40b7fdeb4545} 
+def {\bfseries column\+Count} (self, parent)
+\item 
+\hypertarget{a00083_a2f7291849d0efb3d7cff499d1cde0bf6}{}\label{a00083_a2f7291849d0efb3d7cff499d1cde0bf6} 
+def \hyperlink{a00083_a2f7291849d0efb3d7cff499d1cde0bf6}{data} (self, index, role)
+\begin{DoxyCompactList}\small\item\em Returns the data stored under the given role for the item referred to by the index. \end{DoxyCompactList}\item 
+\hypertarget{a00083_a9d7790fb94587e15b2c1b77a01e7845c}{}\label{a00083_a9d7790fb94587e15b2c1b77a01e7845c} 
+def {\bfseries set\+Data} (self, index, value, role=Qt\+Core.\+Qt.\+Edit\+Role)
+\item 
+\hypertarget{a00083_a6a1656f6697b334ba6112c194cf04611}{}\label{a00083_a6a1656f6697b334ba6112c194cf04611} 
+def {\bfseries header\+Data} (self, section, orientation, role)
+\item 
+\hypertarget{a00083_ad60d9395ff571be3fcf12411886f8bcf}{}\label{a00083_ad60d9395ff571be3fcf12411886f8bcf} 
+def {\bfseries flags} (self, index)
+\item 
+\hypertarget{a00083_afa98c784f58d15bdb49c9ba85854ae03}{}\label{a00083_afa98c784f58d15bdb49c9ba85854ae03} 
+def {\bfseries parent} (self, index)
+\item 
+\hypertarget{a00083_a3c52ee6daea1dc2ce7bb23833c761ed2}{}\label{a00083_a3c52ee6daea1dc2ce7bb23833c761ed2} 
+def {\bfseries index} (self, row, column, parent)
+\item 
+\hypertarget{a00083_ad19222ac3eb114c51dce157ae50b2e19}{}\label{a00083_ad19222ac3eb114c51dce157ae50b2e19} 
+def {\bfseries get\+Node} (self, index)
+\item 
+\hypertarget{a00083_aa80631169f93be117b17729ae8fa7bf6}{}\label{a00083_aa80631169f93be117b17729ae8fa7bf6} 
+def {\bfseries remove\+Rows} (self, position, rows, parent=Qt\+Core.\+Q\+Model\+Index())
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is a creation of a model for the tree view list. 
+
+It inherits the basic Q\+Abstract\+Item\+Model class\+The Q\+Abstract\+Item\+Model class defines the standard interface that item models must use to be able to inter-\/operate with other components in the model/view architecture. It is not supposed to be instantiated directly. Instead, you should subclass it to create new models. This model will be the one used by a a \hyperlink{a00087}{data\+\_\+structure.\+case\+\_\+node.\+Case\+Node} object.
+
+When subclassing Q\+Abstract\+Item\+Model, at the very least you must implement index(), parent(), row\+Count(), column\+Count(), and \hyperlink{a00083_a2f7291849d0efb3d7cff499d1cde0bf6}{data()}. These functions are used in all read-\/only models, and form the basis of editable models. More info\+: \href{http://doc.qt.io/qt-5/qabstractitemmodel.html#details}{\tt http\+://doc.\+qt.\+io/qt-\/5/qabstractitemmodel.\+html\#details} 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+data\+\_\+structure/case\+\_\+model.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,1094 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1196</width>
+    <height>866</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="toolTip">
+   <string extracomment="sdfs"/>
+  </property>
+  <property name="statusTip">
+   <string extracomment="sdfsdfdsf"/>
+  </property>
+  <property name="whatsThis">
+   <string extracomment="sahdjhjsahdj"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="centralwidget_hl"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="ui_file_toolbar">
+   <property name="windowTitle">
+    <string>File</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QToolBar" name="ui_view_toolbar">
+   <property name="windowTitle">
+    <string>View</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QDockWidget" name="ui_treeview_dockW">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>190</width>
+     <height>300</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>500</width>
+     <height>524287</height>
+    </size>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::LeftDockWidgetArea|Qt::RightDockWidgetArea</set>
+   </property>
+   <property name="windowTitle">
+    <string>Tree View</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="ui_treeview_dockcontents">
+    <layout class="QVBoxLayout" name="ui_treeview_dockcontents_vl">
+     <item>
+      <widget class="QTreeView" name="ui_case_treeview">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Case List</string>
+       </property>
+       <property name="statusTip">
+        <string>Case List - All loaded cases are displayed here. Select a case to modify the 3D part or the Tecplot graphics display</string>
+       </property>
+       <property name="sortingEnabled">
+        <bool>false</bool>
+       </property>
+       <property name="animated">
+        <bool>true</bool>
+       </property>
+       <property name="headerHidden">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QListWidget" name="ui_subcase_list">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>10</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Sub-Shape List</string>
+       </property>
+       <property name="statusTip">
+        <string>Sub-Shape List - The sub-shapes of the case loaded are displayed here. Select an item to modify it individually in Properties and Tools</string>
+       </property>
+       <property name="selectionMode">
+        <enum>QAbstractItemView::ExtendedSelection</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="ui_deletecase_btn">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string>Delete Case</string>
+       </property>
+       <property name="statusTip">
+        <string>Delete Case - Delete one case from the list</string>
+       </property>
+       <property name="text">
+        <string>Delete Selected Case</string>
+       </property>
+       <property name="shortcut">
+        <string>Del</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="ui_propertiestools_dockW">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>382</width>
+     <height>496</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>500</width>
+     <height>524287</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+    </font>
+   </property>
+   <property name="windowTitle">
+    <string>Properties and Tools</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="ui_propertiestools_dockcontents">
+    <layout class="QGridLayout" name="ui_propertiestools_dockcontents_gl">
+     <item row="1" column="0" colspan="2">
+      <widget class="QLineEdit" name="ui_selectedcase_edit">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Active Case</string>
+       </property>
+       <property name="statusTip">
+        <string>Active Case - The controls below will be applied to this case</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="ui_zoom_lbl">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string>Costumize visualization zoom</string>
+       </property>
+       <property name="statusTip">
+        <string>Zoom Factor - Amount of percentage of zooming by wheel scroll</string>
+       </property>
+       <property name="text">
+        <string>Zoom Factor:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="0" colspan="2">
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="2" column="0" colspan="2">
+      <widget class="QGroupBox" name="ui_shapeappearance_groupbox">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string>Shape Control</string>
+       </property>
+       <property name="statusTip">
+        <string>Shape Control</string>
+       </property>
+       <property name="title">
+        <string>Shape Control</string>
+       </property>
+       <layout class="QGridLayout" name="ui_shape_appearance_groupbox_gl">
+        <item row="5" column="0">
+         <widget class="QPushButton" name="ui_shape_setcolor_btn">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="statusTip">
+           <string>Set Color - Sets color to the selected sub-shape item in Sub-Shape List</string>
+          </property>
+          <property name="text">
+           <string>Set Color</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QPushButton" name="ui_shape_settransparency_btn">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Set Transparency</string>
+          </property>
+          <property name="statusTip">
+           <string>Set Transparency - Sets transparency to the selected sub-shape item in Sub-Shape List</string>
+          </property>
+          <property name="text">
+           <string>Set Transp.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QDoubleSpinBox" name="ui_shape_transparency_dspn">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Transparency value</string>
+          </property>
+          <property name="statusTip">
+           <string>Transparency - value between 0 (opaque) to 1 (fully transparent)</string>
+          </property>
+          <property name="maximum">
+           <double>1.000000000000000</double>
+          </property>
+          <property name="singleStep">
+           <double>0.100000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QPushButton" name="ui_shape_quality_btn">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="statusTip">
+           <string>Set Quality - Sets quality to the selected sub-shape item in Sub-Shape List</string>
+          </property>
+          <property name="text">
+           <string>Set Quality</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QDoubleSpinBox" name="ui_shape_quality_dspn">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Quality value</string>
+          </property>
+          <property name="statusTip">
+           <string>Quality - Factor of refinement of shape. Recomended above 20</string>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="minimum">
+           <double>0.010000000000000</double>
+          </property>
+          <property name="singleStep">
+           <double>0.200000000000000</double>
+          </property>
+          <property name="value">
+           <double>1.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QComboBox" name="ui_shape_setcolor_combo">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>List of Colors</string>
+          </property>
+          <property name="statusTip">
+           <string>List of Colors - List of colors available</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Golden</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Blue</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Red</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>White</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Black</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Yellow</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QPushButton" name="ui_shape_hide_btn">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Hide selected sub-shape</string>
+          </property>
+          <property name="statusTip">
+           <string>Hide Shape - Hide the selected sub-shape on the Display.</string>
+          </property>
+          <property name="text">
+           <string>Hide Shape</string>
+          </property>
+          <property name="shortcut">
+           <string>H</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QPushButton" name="ui_shape_display_btn">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Display selected sub-shape</string>
+          </property>
+          <property name="statusTip">
+           <string>Display Shape - Display the selected sub-shape on the Display.</string>
+          </property>
+          <property name="text">
+           <string>Display Shape</string>
+          </property>
+          <property name="shortcut">
+           <string>D</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="4" column="0" colspan="2">
+      <widget class="QGroupBox" name="ui_shape_transformation_groupbox">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string>Shape Transformation</string>
+       </property>
+       <property name="statusTip">
+        <string>Shape Transformation</string>
+       </property>
+       <property name="title">
+        <string>Shape Transformation</string>
+       </property>
+       <layout class="QGridLayout" name="ui_shape_transformation_groupbox_gl">
+        <item row="2" column="3">
+         <widget class="QLabel" name="ui_ydispl_lbl">
+          <property name="text">
+           <string>Y</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="4">
+         <widget class="QDoubleSpinBox" name="ui_shape_tetarotat_dspn">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Rotate shape in teta value (degrees)</string>
+          </property>
+          <property name="statusTip">
+           <string>Rotation value of sub-shape in teta (degrees)</string>
+          </property>
+          <property name="minimum">
+           <double>-10000.000000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>10000.000000000000000</double>
+          </property>
+          <property name="singleStep">
+           <double>0.100000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="6">
+         <widget class="QComboBox" name="ui_shape_rotataxis_combo">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Axis of rotation</string>
+          </property>
+          <property name="statusTip">
+           <string>Axis of rotation </string>
+          </property>
+          <item>
+           <property name="text">
+            <string>X</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Y</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Z</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="4" column="2" colspan="2">
+         <widget class="QLabel" name="ui_axisrotat_lbl">
+          <property name="text">
+           <string>Rotate</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QDoubleSpinBox" name="ui_shape_xdispl_dspn">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Displace shape in x value</string>
+          </property>
+          <property name="statusTip">
+           <string>Displacement value of sub-shape in x positive direction</string>
+          </property>
+          <property name="minimum">
+           <double>-10000.000000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>10000.000000000000000</double>
+          </property>
+          <property name="singleStep">
+           <double>0.100000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="ui_xdispl_lbl">
+          <property name="text">
+           <string>X</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="5">
+         <widget class="QLabel" name="ui_zdispl_lbl">
+          <property name="text">
+           <string>Z</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="6">
+         <widget class="QDoubleSpinBox" name="ui_shape_zdispl_dspn">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Displace shape in z value</string>
+          </property>
+          <property name="statusTip">
+           <string>Displacement value of sub-shape in z positive direction</string>
+          </property>
+          <property name="minimum">
+           <double>-10000.000000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>10000.000000000000000</double>
+          </property>
+          <property name="singleStep">
+           <double>0.100000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4">
+         <widget class="QDoubleSpinBox" name="ui_shape_ydispl_dspn">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Displace shape in y value</string>
+          </property>
+          <property name="statusTip">
+           <string>Displacement value of sub-shape in y positive direction</string>
+          </property>
+          <property name="minimum">
+           <double>-10000.000000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>10000.000000000000000</double>
+          </property>
+          <property name="singleStep">
+           <double>0.100000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="2" colspan="6">
+         <widget class="QPushButton" name="ui_shape_settranslation_btn">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Modifies the shape location</string>
+          </property>
+          <property name="statusTip">
+           <string>Set Transformation - Sets the transformation for the selected sub-shape item in Sub-Shape List</string>
+          </property>
+          <property name="text">
+           <string>Set Transformation</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="8" column="0" colspan="2">
+      <widget class="QGroupBox" name="ui_tecplot_control_groupbox">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string>Tecplot Control</string>
+       </property>
+       <property name="statusTip">
+        <string>Tecplot Control</string>
+       </property>
+       <property name="title">
+        <string>Tecplot Control</string>
+       </property>
+       <layout class="QGridLayout" name="ui_tecplot_control_groupbox_gl">
+        <property name="margin">
+         <number>5</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QPushButton" name="ui_tecplot_setinvisible_btn">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Toggles visibility of tecplot graphics for this case</string>
+          </property>
+          <property name="statusTip">
+           <string>Hide Plot - Set selected case tecplot to invisible or visible</string>
+          </property>
+          <property name="text">
+           <string>Toggle Case Visibility</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="ui_tecplot_setneutral_btn">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Toggles mode of tecplot graphics for this case</string>
+          </property>
+          <property name="statusTip">
+           <string>Set Neutral - Toggles lines to become neutral and dashed if</string>
+          </property>
+          <property name="text">
+           <string>Toggle Case Display Mode</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="ui_tecplot_toggle_bladeprofiles_btn">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Toggles visibility of tecplot graphics for this case</string>
+          </property>
+          <property name="statusTip">
+           <string>Hide Plot - Set selected case tecplot to invisible or visible</string>
+          </property>
+          <property name="text">
+           <string>Toggle Blade Profiles Visibility</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="ui_tecplot_toggle_meanlines_btn">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Toggles visibility of tecplot graphics for this case</string>
+          </property>
+          <property name="statusTip">
+           <string>Hide Plot - Set selected case tecplot to invisible or visible</string>
+          </property>
+          <property name="text">
+           <string>Toggle Mean Lines Visibility</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QDoubleSpinBox" name="ui_display_zoomfactor_dspn">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string>Percentage of zooming by mouse wheel scroll</string>
+       </property>
+       <property name="statusTip">
+        <string>Amount of percentage of zooming by wheel scroll</string>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="minimum">
+        <double>1.010000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+       <property name="value">
+        <double>1.010000000000000</double>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="ui_tecplotgraphics_dockW">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>300</width>
+     <height>200</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>TecPlot Graphics</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="ui_tecplotgraphics_dockcontents">
+    <layout class="QVBoxLayout" name="ui_tecplotgraphics_dockcontents_vl">
+     <item>
+      <widget class="QWidget" name="ui_tecplot_widget" native="true">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <layout class="QVBoxLayout" name="ui_tecplot_widget_vl"/>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="ui_tecplot_toolbar">
+   <property name="windowTitle">
+    <string>TecPlot Controls</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QToolBar" name="ui_settings_toolbar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1196</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="ui_file_menu_">
+    <property name="title">
+     <string>File</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="ui_edit_menu">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="ui_view_menu">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <widget class="QMenu" name="ui_standard_view_submenu_">
+     <property name="title">
+      <string>Standard Views</string>
+     </property>
+    </widget>
+    <widget class="QMenu" name="ui_draw_view_submenu_">
+     <property name="title">
+      <string>Draw Styles</string>
+     </property>
+    </widget>
+    <addaction name="ui_standard_view_submenu_"/>
+    <addaction name="ui_draw_view_submenu_"/>
+   </widget>
+   <addaction name="ui_file_menu_"/>
+   <addaction name="ui_edit_menu"/>
+   <addaction name="ui_view_menu"/>
+  </widget>
+  <action name="ui_file_menu">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../.designer/backup/icons/basic/open-3.png</normaloff>../../.designer/backup/icons/basic/open-3.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="text">
+    <string>Undo</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="text">
+    <string>Redo</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="text">
+    <string>Cut</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="text">
+    <string>Copy</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="text">
+    <string>Paste</string>
+   </property>
+  </action>
+  <action name="actionPreferences">
+   <property name="text">
+    <string>Preferences</string>
+   </property>
+  </action>
+  <action name="actionFront_View">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../.designer/backup/icons/views/front_view.png</normaloff>../../.designer/backup/icons/views/front_view.png</iconset>
+   </property>
+   <property name="text">
+    <string>Front</string>
+   </property>
+  </action>
+  <action name="actionDraw_Style">
+   <property name="text">
+    <string>Draw Style</string>
+   </property>
+  </action>
+  <action name="actionLa">
+   <property name="text">
+    <string>la</string>
+   </property>
+  </action>
+  <action name="actionLa_2">
+   <property name="text">
+    <string>la</string>
+   </property>
+  </action>
+  <action name="ui_file_exit_action">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>ui_shape_quality_btn</tabstop>
+  <tabstop>ui_shape_quality_dspn</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

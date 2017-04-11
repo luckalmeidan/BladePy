@@ -1,0 +1,129 @@
+\hypertarget{classdata__structure_1_1case__model_1_1_case_model}{}\section{data\+\_\+structure.\+case\+\_\+model.\+Case\+Model Class Reference}
+\label{classdata__structure_1_1case__model_1_1_case_model}\index{data\+\_\+structure.\+case\+\_\+model.\+Case\+Model@{data\+\_\+structure.\+case\+\_\+model.\+Case\+Model}}
+
+
+This is a creation of a model for the tree view list.  
+
+
+
+
+Inheritance diagram for data\+\_\+structure.\+case\+\_\+model.\+Case\+Model\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classdata__structure_1_1case__model_1_1_case_model__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classdata__structure_1_1case__model_1_1_case_model_a7961b552537902b9236c2ded9cbfbc63}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, root, \hyperlink{classdata__structure_1_1case__model_1_1_case_model_afa98c784f58d15bdb49c9ba85854ae03}{parent}=None)
+\item 
+def \hyperlink{classdata__structure_1_1case__model_1_1_case_model_a44b390eef57be2a4883c1e6599b5a8ca}{row\+Count} (self, \hyperlink{classdata__structure_1_1case__model_1_1_case_model_afa98c784f58d15bdb49c9ba85854ae03}{parent})
+\item 
+def \hyperlink{classdata__structure_1_1case__model_1_1_case_model_a132b1b7d95f07cae505b40b7fdeb4545}{column\+Count} (self, \hyperlink{classdata__structure_1_1case__model_1_1_case_model_afa98c784f58d15bdb49c9ba85854ae03}{parent})
+\item 
+def \hyperlink{classdata__structure_1_1case__model_1_1_case_model_a2f7291849d0efb3d7cff499d1cde0bf6}{data} (self, \hyperlink{classdata__structure_1_1case__model_1_1_case_model_a3c52ee6daea1dc2ce7bb23833c761ed2}{index}, role)
+\begin{DoxyCompactList}\small\item\em Returns the data stored under the given role for the item referred to by the index. \end{DoxyCompactList}\item 
+def \hyperlink{classdata__structure_1_1case__model_1_1_case_model_a9d7790fb94587e15b2c1b77a01e7845c}{set\+Data} (self, \hyperlink{classdata__structure_1_1case__model_1_1_case_model_a3c52ee6daea1dc2ce7bb23833c761ed2}{index}, value, role=Qt\+Core.\+Qt.\+Edit\+Role)
+\item 
+def \hyperlink{classdata__structure_1_1case__model_1_1_case_model_a6a1656f6697b334ba6112c194cf04611}{header\+Data} (self, section, orientation, role)
+\item 
+def \hyperlink{classdata__structure_1_1case__model_1_1_case_model_ad60d9395ff571be3fcf12411886f8bcf}{flags} (self, \hyperlink{classdata__structure_1_1case__model_1_1_case_model_a3c52ee6daea1dc2ce7bb23833c761ed2}{index})
+\item 
+def \hyperlink{classdata__structure_1_1case__model_1_1_case_model_afa98c784f58d15bdb49c9ba85854ae03}{parent} (self, \hyperlink{classdata__structure_1_1case__model_1_1_case_model_a3c52ee6daea1dc2ce7bb23833c761ed2}{index})
+\item 
+def \hyperlink{classdata__structure_1_1case__model_1_1_case_model_a3c52ee6daea1dc2ce7bb23833c761ed2}{index} (self, row, column, \hyperlink{classdata__structure_1_1case__model_1_1_case_model_afa98c784f58d15bdb49c9ba85854ae03}{parent})
+\item 
+def \hyperlink{classdata__structure_1_1case__model_1_1_case_model_ad19222ac3eb114c51dce157ae50b2e19}{get\+Node} (self, \hyperlink{classdata__structure_1_1case__model_1_1_case_model_a3c52ee6daea1dc2ce7bb23833c761ed2}{index})
+\item 
+def \hyperlink{classdata__structure_1_1case__model_1_1_case_model_aa80631169f93be117b17729ae8fa7bf6}{remove\+Rows} (self, position, rows, \hyperlink{classdata__structure_1_1case__model_1_1_case_model_afa98c784f58d15bdb49c9ba85854ae03}{parent}=Qt\+Core.\+Q\+Model\+Index())
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is a creation of a model for the tree view list. 
+
+It inherits the basic Q\+Abstract\+Item\+Model class\+The Q\+Abstract\+Item\+Model class defines the standard interface that item models must use to be able to inter-\/operate with other components in the model/view architecture. It is not supposed to be instantiated directly. Instead, you should subclass it to create new models. This model will be the one used by a a \hyperlink{classdata__structure_1_1case__node_1_1_case_node}{data\+\_\+structure.\+case\+\_\+node.\+Case\+Node} object.
+
+When subclassing Q\+Abstract\+Item\+Model, at the very least you must implement \hyperlink{classdata__structure_1_1case__model_1_1_case_model_a3c52ee6daea1dc2ce7bb23833c761ed2}{index()}, \hyperlink{classdata__structure_1_1case__model_1_1_case_model_afa98c784f58d15bdb49c9ba85854ae03}{parent()}, \hyperlink{classdata__structure_1_1case__model_1_1_case_model_a44b390eef57be2a4883c1e6599b5a8ca}{row\+Count()}, \hyperlink{classdata__structure_1_1case__model_1_1_case_model_a132b1b7d95f07cae505b40b7fdeb4545}{column\+Count()}, and \hyperlink{classdata__structure_1_1case__model_1_1_case_model_a2f7291849d0efb3d7cff499d1cde0bf6}{data()}. These functions are used in all read-\/only models, and form the basis of editable models. More info\+: \href{http://doc.qt.io/qt-5/qabstractitemmodel.html#details}{\tt http\+://doc.\+qt.\+io/qt-\/5/qabstractitemmodel.\+html\#details} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classdata__structure_1_1case__model_1_1_case_model_a7961b552537902b9236c2ded9cbfbc63}{}\label{classdata__structure_1_1case__model_1_1_case_model_a7961b552537902b9236c2ded9cbfbc63} 
+\index{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model@{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model@{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+model.\+Case\+Model.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{root,  }\item[{}]{parent = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classdata__structure_1_1case__model_1_1_case_model_a132b1b7d95f07cae505b40b7fdeb4545}{}\label{classdata__structure_1_1case__model_1_1_case_model_a132b1b7d95f07cae505b40b7fdeb4545} 
+\index{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model@{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model}!column\+Count@{column\+Count}}
+\index{column\+Count@{column\+Count}!data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model@{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model}}
+\subsubsection{\texorpdfstring{column\+Count()}{columnCount()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+model.\+Case\+Model.\+column\+Count (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{parent }\end{DoxyParamCaption})}
+
+\hypertarget{classdata__structure_1_1case__model_1_1_case_model_a2f7291849d0efb3d7cff499d1cde0bf6}{}\label{classdata__structure_1_1case__model_1_1_case_model_a2f7291849d0efb3d7cff499d1cde0bf6} 
+\index{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model@{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model}!data@{data}}
+\index{data@{data}!data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model@{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model}}
+\subsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+model.\+Case\+Model.\+data (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{index,  }\item[{}]{role }\end{DoxyParamCaption})}
+
+
+
+Returns the data stored under the given role for the item referred to by the index. 
+
+\hypertarget{classdata__structure_1_1case__model_1_1_case_model_ad60d9395ff571be3fcf12411886f8bcf}{}\label{classdata__structure_1_1case__model_1_1_case_model_ad60d9395ff571be3fcf12411886f8bcf} 
+\index{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model@{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model}!flags@{flags}}
+\index{flags@{flags}!data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model@{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model}}
+\subsubsection{\texorpdfstring{flags()}{flags()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+model.\+Case\+Model.\+flags (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{index }\end{DoxyParamCaption})}
+
+\hypertarget{classdata__structure_1_1case__model_1_1_case_model_ad19222ac3eb114c51dce157ae50b2e19}{}\label{classdata__structure_1_1case__model_1_1_case_model_ad19222ac3eb114c51dce157ae50b2e19} 
+\index{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model@{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model}!get\+Node@{get\+Node}}
+\index{get\+Node@{get\+Node}!data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model@{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model}}
+\subsubsection{\texorpdfstring{get\+Node()}{getNode()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+model.\+Case\+Model.\+get\+Node (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{index }\end{DoxyParamCaption})}
+
+\hypertarget{classdata__structure_1_1case__model_1_1_case_model_a6a1656f6697b334ba6112c194cf04611}{}\label{classdata__structure_1_1case__model_1_1_case_model_a6a1656f6697b334ba6112c194cf04611} 
+\index{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model@{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model}!header\+Data@{header\+Data}}
+\index{header\+Data@{header\+Data}!data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model@{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model}}
+\subsubsection{\texorpdfstring{header\+Data()}{headerData()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+model.\+Case\+Model.\+header\+Data (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{section,  }\item[{}]{orientation,  }\item[{}]{role }\end{DoxyParamCaption})}
+
+\hypertarget{classdata__structure_1_1case__model_1_1_case_model_a3c52ee6daea1dc2ce7bb23833c761ed2}{}\label{classdata__structure_1_1case__model_1_1_case_model_a3c52ee6daea1dc2ce7bb23833c761ed2} 
+\index{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model@{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model}!index@{index}}
+\index{index@{index}!data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model@{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model}}
+\subsubsection{\texorpdfstring{index()}{index()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+model.\+Case\+Model.\+index (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{row,  }\item[{}]{column,  }\item[{}]{parent }\end{DoxyParamCaption})}
+
+\hypertarget{classdata__structure_1_1case__model_1_1_case_model_afa98c784f58d15bdb49c9ba85854ae03}{}\label{classdata__structure_1_1case__model_1_1_case_model_afa98c784f58d15bdb49c9ba85854ae03} 
+\index{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model@{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model}!parent@{parent}}
+\index{parent@{parent}!data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model@{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model}}
+\subsubsection{\texorpdfstring{parent()}{parent()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+model.\+Case\+Model.\+parent (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{index }\end{DoxyParamCaption})}
+
+\hypertarget{classdata__structure_1_1case__model_1_1_case_model_aa80631169f93be117b17729ae8fa7bf6}{}\label{classdata__structure_1_1case__model_1_1_case_model_aa80631169f93be117b17729ae8fa7bf6} 
+\index{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model@{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model}!remove\+Rows@{remove\+Rows}}
+\index{remove\+Rows@{remove\+Rows}!data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model@{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model}}
+\subsubsection{\texorpdfstring{remove\+Rows()}{removeRows()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+model.\+Case\+Model.\+remove\+Rows (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{position,  }\item[{}]{rows,  }\item[{}]{parent = {\ttfamily QtCore.QModelIndex()} }\end{DoxyParamCaption})}
+
+\hypertarget{classdata__structure_1_1case__model_1_1_case_model_a44b390eef57be2a4883c1e6599b5a8ca}{}\label{classdata__structure_1_1case__model_1_1_case_model_a44b390eef57be2a4883c1e6599b5a8ca} 
+\index{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model@{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model}!row\+Count@{row\+Count}}
+\index{row\+Count@{row\+Count}!data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model@{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model}}
+\subsubsection{\texorpdfstring{row\+Count()}{rowCount()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+model.\+Case\+Model.\+row\+Count (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{parent }\end{DoxyParamCaption})}
+
+\hypertarget{classdata__structure_1_1case__model_1_1_case_model_a9d7790fb94587e15b2c1b77a01e7845c}{}\label{classdata__structure_1_1case__model_1_1_case_model_a9d7790fb94587e15b2c1b77a01e7845c} 
+\index{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model@{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model}!set\+Data@{set\+Data}}
+\index{set\+Data@{set\+Data}!data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model@{data\+\_\+structure\+::case\+\_\+model\+::\+Case\+Model}}
+\subsubsection{\texorpdfstring{set\+Data()}{setData()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+model.\+Case\+Model.\+set\+Data (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{index,  }\item[{}]{value,  }\item[{}]{role = {\ttfamily QtCore.Qt.EditRole} }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{case__model_8py}{case\+\_\+model.\+py}\end{DoxyCompactItemize}

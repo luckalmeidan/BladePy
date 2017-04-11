@@ -1,0 +1,488 @@
+\hypertarget{a00089}{}\section{data\+\_\+structure.\+case\+\_\+node.\+Case\+Node Class Reference}
+\label{a00089}\index{data\+\_\+structure.\+case\+\_\+node.\+Case\+Node@{data\+\_\+structure.\+case\+\_\+node.\+Case\+Node}}
+
+
+Class to structure all data loaded in \hyperlink{a00081_a1a62f9b5b8f5929bdb6f0a8c27049d9e}{Core.\+Blade\+Py\+Core.\+add\+Case()}.  
+
+
+
+
+Inheritance diagram for data\+\_\+structure.\+case\+\_\+node.\+Case\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{a00088}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{a00089_a268359dc0ff12ae9d60b0311f4d20a12}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, \hyperlink{a00089_a73e2e5313f50260c6c767fef3c4b3ced}{name}, shape=None, subshape\+\_\+names=None, plot\+\_\+lists=None, \hyperlink{a00089_a130f184f648103908a74a8a332f7513f}{parent}=None)
+\begin{DoxyCompactList}\small\item\em The constructor of the class. \end{DoxyCompactList}\item 
+def \hyperlink{a00089_ad3bd18eb2babab717bc4bd7a48ddbcb2}{shape\+H\+A\+IS} (self)
+\begin{DoxyCompactList}\small\item\em Method for retrieving the handle of A\+I\+S\+\_\+\+Shape for the node. \end{DoxyCompactList}\item 
+def \hyperlink{a00089_acc05e6147aac463ecd4b8073a050a54e}{shape\+Transformation} (self)
+\begin{DoxyCompactList}\small\item\em Method for getting the transformation for the shape of this case. \end{DoxyCompactList}\item 
+def \hyperlink{a00089_a4ee5ef91001b2c4db57c268338ef287e}{set\+Shape\+Transformation} (self, transformation, coord)
+\begin{DoxyCompactList}\small\item\em Method for setting the transformation for the shape of this case. \end{DoxyCompactList}\item 
+def \hyperlink{a00089_a7ee651fb0c3759df3d639ca19f70710d}{shape\+Transparency} (self)
+\begin{DoxyCompactList}\small\item\em Method for getting the transparency for the shape of this case. \end{DoxyCompactList}\item 
+def \hyperlink{a00089_ac24fbc54a83a04a8ea3d20f058b3a196}{set\+Shape\+Transparency} (self, transparency)
+\begin{DoxyCompactList}\small\item\em Method for setting the transparency for the shape of this case. \end{DoxyCompactList}\item 
+def \hyperlink{a00089_aedc74c039a8da3960544f0694e2379b0}{shape\+Color} (self)
+\begin{DoxyCompactList}\small\item\em Method for getting the color for the shape of this case. \end{DoxyCompactList}\item 
+def \hyperlink{a00089_a9eb860e45595b4a1c4d018c259d9d930}{set\+Shape\+Color} (self, color)
+\begin{DoxyCompactList}\small\item\em Method for setting the color for the shape of this case. \end{DoxyCompactList}\item 
+def \hyperlink{a00089_a333ce56e7787cb1d23974a75182facca}{shape\+Quality} (self)
+\begin{DoxyCompactList}\small\item\em Method for getting the quality for the shape of this case. \end{DoxyCompactList}\item 
+def \hyperlink{a00089_a7bc800f55127489e601b7ddbaa6ad2cb}{set\+Shape\+Quality} (self, quality)
+\begin{DoxyCompactList}\small\item\em Method for setting the quality for the shape of this case. \end{DoxyCompactList}\item 
+def \hyperlink{a00089_a5fda7f2cc9d0dd56ad8e088447decd15}{tecplot\+Lists} (self)
+\begin{DoxyCompactList}\small\item\em Method for getting the tecplot graphics of this case. \end{DoxyCompactList}\item 
+def \hyperlink{a00089_ae868c48f3c348062424b040c2e7f4646}{tecplot\+Saved\+Style\+List} (self)
+\begin{DoxyCompactList}\small\item\em Method for getting the saved tecplot graphics line-\/styles of this case. \end{DoxyCompactList}\item 
+def \hyperlink{a00089_aca41f53412a5bfdc6e3ced0ddaf3d2b3}{set\+Tecplot\+Saved\+Style\+List} (self, tecplot\+\_\+list)
+\begin{DoxyCompactList}\small\item\em Method for setting the saved tecplot graphics line-\/styles of this case. \end{DoxyCompactList}\item 
+def \hyperlink{a00089_aeb90281663e7094357befb23383a0d12}{tecplot\+Visibility} (self)
+\begin{DoxyCompactList}\small\item\em Method for getting the current state of visibility the tecplot graphics for this case. \end{DoxyCompactList}\item 
+def \hyperlink{a00089_a7bf258efc68a0aa850fd68d937b54d44}{set\+Tecplot\+Visibility} (self, visibility)
+\begin{DoxyCompactList}\small\item\em Method for setting a state for the tecplot graphics for this case. \end{DoxyCompactList}\item 
+def \hyperlink{a00089_adf31e8bf3222b4c310e652a08fa4cbb5}{tecplot\+Is\+Visible} (self)
+\begin{DoxyCompactList}\small\item\em Method for verifying if tecplot is visible. \end{DoxyCompactList}\item 
+def \hyperlink{a00089_aed14e2af89b145c93189f2e13b3520f9}{tecplot\+Mode} (self)
+\begin{DoxyCompactList}\small\item\em Method for getting the current state of mode the tecplot graphics for this case. \end{DoxyCompactList}\item 
+def \hyperlink{a00089_a18f8a870b09f2ec7c25bde6da6ad4d77}{set\+Tecplot\+Mode} (self, mode)
+\begin{DoxyCompactList}\small\item\em Method for setting the current state of mode the tecplot graphics for this case. \end{DoxyCompactList}\item 
+def \hyperlink{a00089_ac8139ea04504dbaedeeb295d2db40cd7}{tecplot\+Is\+Neutral} (self)
+\begin{DoxyCompactList}\small\item\em Method for verifying if tecplot is neutral. \end{DoxyCompactList}\item 
+def \hyperlink{a00089_a5be02db2416888d37bf33c148a97bc0c}{add\+Child} (self, \hyperlink{a00089_ac5303eb8bbab69954feaa7205ba778aa}{child})
+\begin{DoxyCompactList}\small\item\em Methods required by model tree view of Py\+Qt. \end{DoxyCompactList}\item 
+def \hyperlink{a00089_a9f706863d3146d479a3be6d7737a6102}{insert\+Child} (self, position, \hyperlink{a00089_ac5303eb8bbab69954feaa7205ba778aa}{child})
+\begin{DoxyCompactList}\small\item\em Methods required by model tree view of Py\+Qt. \end{DoxyCompactList}\item 
+def \hyperlink{a00089_ac40fac97e12433646432658373d17bb5}{remove\+Child} (self, position)
+\begin{DoxyCompactList}\small\item\em Methods required by model tree view of Py\+Qt. \end{DoxyCompactList}\item 
+def \hyperlink{a00089_a73e2e5313f50260c6c767fef3c4b3ced}{name} (self)
+\begin{DoxyCompactList}\small\item\em Methods required by model tree view of Py\+Qt. \end{DoxyCompactList}\item 
+def \hyperlink{a00089_ae3f38c3ce20582e74e659a1657282c0e}{set\+Name} (self, \hyperlink{a00089_a73e2e5313f50260c6c767fef3c4b3ced}{name})
+\begin{DoxyCompactList}\small\item\em Methods required by model tree view of Py\+Qt. \end{DoxyCompactList}\item 
+def \hyperlink{a00089_ac5303eb8bbab69954feaa7205ba778aa}{child} (self, \hyperlink{a00089_a5ffe67a35812f868b49b833deeae9e60}{row})
+\begin{DoxyCompactList}\small\item\em Methods required by model tree view of Py\+Qt. \end{DoxyCompactList}\item 
+def \hyperlink{a00089_a1151098cb931c0dac5e36b5a430ee831}{child\+Count} (self)
+\begin{DoxyCompactList}\small\item\em Methods required by model tree view of Py\+Qt. \end{DoxyCompactList}\item 
+def \hyperlink{a00089_a130f184f648103908a74a8a332f7513f}{parent} (self)
+\begin{DoxyCompactList}\small\item\em Methods required by model tree view of Py\+Qt. \end{DoxyCompactList}\item 
+def \hyperlink{a00089_a5ffe67a35812f868b49b833deeae9e60}{row} (self)
+\begin{DoxyCompactList}\small\item\em Methods required by model tree view of Py\+Qt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{a00089_ac2f5b0ae9715edeac8f9b1ccc0fd64e3}{}\label{a00089_ac2f5b0ae9715edeac8f9b1ccc0fd64e3} 
+{\bfseries subshape}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to structure all data loaded in \hyperlink{a00081_a1a62f9b5b8f5929bdb6f0a8c27049d9e}{Core.\+Blade\+Py\+Core.\+add\+Case()}. 
+
+This is the structure to be read by the model set to tree list view. The case node contains information of name of the case, handle of the ais\+\_\+shape, the name of the sub-\/shapes in the loaded igs and the graphics generate by Tecplot\+Reader Widget. The model used to represent a \hyperlink{a00089}{Case\+Node} is an \hyperlink{a00085}{case\+\_\+model.\+Case\+Model} object. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{a00089_a268359dc0ff12ae9d60b0311f4d20a12}{}\label{a00089_a268359dc0ff12ae9d60b0311f4d20a12} 
+\index{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+node.\+Case\+Node.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{shape = {\ttfamily None},  }\item[{}]{subshape\+\_\+names = {\ttfamily None},  }\item[{}]{plot\+\_\+lists = {\ttfamily None},  }\item[{}]{parent = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+The constructor of the class. 
+
+A \hyperlink{a00089}{Case\+Node} object is created in \hyperlink{a00081_a1a62f9b5b8f5929bdb6f0a8c27049d9e}{Core.\+Blade\+Py\+Core.\+add\+Case()}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \mbox{[}str\mbox{]} Name of the case \\
+\hline
+{\em shape} & \mbox{[}Handle\+\_\+\+A\+I\+S\+\_\+\+Interactive\+Object\mbox{]} Handles of A\+I\+S\+\_\+\+Shape for shape controlling \\
+\hline
+{\em plot\+\_\+lists} & \mbox{[}list\mbox{]} List of lists of graphics generated by Tecplot\+Reader \\
+\hline
+{\em parent} & \mbox{[}\hyperlink{a00089}{Case\+Node}\mbox{]} Is a \hyperlink{a00089}{Case\+Node} object itself. It is the parent of the node. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{a00089_a5be02db2416888d37bf33c148a97bc0c}{}\label{a00089_a5be02db2416888d37bf33c148a97bc0c} 
+\index{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}!add\+Child@{add\+Child}}
+\index{add\+Child@{add\+Child}!data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}}
+\subsubsection{\texorpdfstring{add\+Child()}{addChild()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+node.\+Case\+Node.\+add\+Child (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{child }\end{DoxyParamCaption})}
+
+
+
+Methods required by model tree view of Py\+Qt. 
+
+Not necessary to observe this method. \hypertarget{a00089_ac5303eb8bbab69954feaa7205ba778aa}{}\label{a00089_ac5303eb8bbab69954feaa7205ba778aa} 
+\index{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}!child@{child}}
+\index{child@{child}!data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}}
+\subsubsection{\texorpdfstring{child()}{child()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+node.\+Case\+Node.\+child (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{row }\end{DoxyParamCaption})}
+
+
+
+Methods required by model tree view of Py\+Qt. 
+
+Not necessary to observe this method. \hypertarget{a00089_a1151098cb931c0dac5e36b5a430ee831}{}\label{a00089_a1151098cb931c0dac5e36b5a430ee831} 
+\index{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}!child\+Count@{child\+Count}}
+\index{child\+Count@{child\+Count}!data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}}
+\subsubsection{\texorpdfstring{child\+Count()}{childCount()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+node.\+Case\+Node.\+child\+Count (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Methods required by model tree view of Py\+Qt. 
+
+Not necessary to observe this method. \hypertarget{a00089_a9f706863d3146d479a3be6d7737a6102}{}\label{a00089_a9f706863d3146d479a3be6d7737a6102} 
+\index{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}!insert\+Child@{insert\+Child}}
+\index{insert\+Child@{insert\+Child}!data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}}
+\subsubsection{\texorpdfstring{insert\+Child()}{insertChild()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+node.\+Case\+Node.\+insert\+Child (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{position,  }\item[{}]{child }\end{DoxyParamCaption})}
+
+
+
+Methods required by model tree view of Py\+Qt. 
+
+Not necessary to observe this method. \hypertarget{a00089_a73e2e5313f50260c6c767fef3c4b3ced}{}\label{a00089_a73e2e5313f50260c6c767fef3c4b3ced} 
+\index{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}!name@{name}}
+\index{name@{name}!data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}}
+\subsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+node.\+Case\+Node.\+name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Methods required by model tree view of Py\+Qt. 
+
+Not necessary to observe this method. \hypertarget{a00089_a130f184f648103908a74a8a332f7513f}{}\label{a00089_a130f184f648103908a74a8a332f7513f} 
+\index{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}!parent@{parent}}
+\index{parent@{parent}!data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}}
+\subsubsection{\texorpdfstring{parent()}{parent()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+node.\+Case\+Node.\+parent (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Methods required by model tree view of Py\+Qt. 
+
+Not necessary to observe this method. \hypertarget{a00089_ac40fac97e12433646432658373d17bb5}{}\label{a00089_ac40fac97e12433646432658373d17bb5} 
+\index{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}!remove\+Child@{remove\+Child}}
+\index{remove\+Child@{remove\+Child}!data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}}
+\subsubsection{\texorpdfstring{remove\+Child()}{removeChild()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+node.\+Case\+Node.\+remove\+Child (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{position }\end{DoxyParamCaption})}
+
+
+
+Methods required by model tree view of Py\+Qt. 
+
+Not necessary to observe this method. \hypertarget{a00089_a5ffe67a35812f868b49b833deeae9e60}{}\label{a00089_a5ffe67a35812f868b49b833deeae9e60} 
+\index{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}!row@{row}}
+\index{row@{row}!data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}}
+\subsubsection{\texorpdfstring{row()}{row()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+node.\+Case\+Node.\+row (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Methods required by model tree view of Py\+Qt. 
+
+Not necessary to observe this method. \hypertarget{a00089_ae3f38c3ce20582e74e659a1657282c0e}{}\label{a00089_ae3f38c3ce20582e74e659a1657282c0e} 
+\index{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}}
+\subsubsection{\texorpdfstring{set\+Name()}{setName()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+node.\+Case\+Node.\+set\+Name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+
+
+Methods required by model tree view of Py\+Qt. 
+
+Not necessary to observe this method. \hypertarget{a00089_a9eb860e45595b4a1c4d018c259d9d930}{}\label{a00089_a9eb860e45595b4a1c4d018c259d9d930} 
+\index{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}!set\+Shape\+Color@{set\+Shape\+Color}}
+\index{set\+Shape\+Color@{set\+Shape\+Color}!data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}}
+\subsubsection{\texorpdfstring{set\+Shape\+Color()}{setShapeColor()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+node.\+Case\+Node.\+set\+Shape\+Color (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{color }\end{DoxyParamCaption})}
+
+
+
+Method for setting the color for the shape of this case. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & \mbox{[}int\mbox{]} The index of the color list of occ\+\_\+modules.\+shapeproperties.\+shape\+\_\+colorlist \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\hypertarget{a00089_a7bc800f55127489e601b7ddbaa6ad2cb}{}\label{a00089_a7bc800f55127489e601b7ddbaa6ad2cb} 
+\index{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}!set\+Shape\+Quality@{set\+Shape\+Quality}}
+\index{set\+Shape\+Quality@{set\+Shape\+Quality}!data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}}
+\subsubsection{\texorpdfstring{set\+Shape\+Quality()}{setShapeQuality()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+node.\+Case\+Node.\+set\+Shape\+Quality (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{quality }\end{DoxyParamCaption})}
+
+
+
+Method for setting the quality for the shape of this case. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em quality} & \mbox{[}float\mbox{]} The quality of the shape of this case \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\hypertarget{a00089_a4ee5ef91001b2c4db57c268338ef287e}{}\label{a00089_a4ee5ef91001b2c4db57c268338ef287e} 
+\index{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}!set\+Shape\+Transformation@{set\+Shape\+Transformation}}
+\index{set\+Shape\+Transformation@{set\+Shape\+Transformation}!data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}}
+\subsubsection{\texorpdfstring{set\+Shape\+Transformation()}{setShapeTransformation()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+node.\+Case\+Node.\+set\+Shape\+Transformation (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{transformation,  }\item[{}]{coord }\end{DoxyParamCaption})}
+
+
+
+Method for setting the transformation for the shape of this case. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em transformation} & \mbox{[}int\mbox{]} The value of transformation \\
+\hline
+{\em coord} & \mbox{[}int\mbox{]} Coordinate of transformation application. Indexes\+: \mbox{[}x\+:0, y\+:1, z\+:2, axis\+:3, theta\+:4\mbox{]}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\hypertarget{a00089_ac24fbc54a83a04a8ea3d20f058b3a196}{}\label{a00089_ac24fbc54a83a04a8ea3d20f058b3a196} 
+\index{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}!set\+Shape\+Transparency@{set\+Shape\+Transparency}}
+\index{set\+Shape\+Transparency@{set\+Shape\+Transparency}!data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}}
+\subsubsection{\texorpdfstring{set\+Shape\+Transparency()}{setShapeTransparency()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+node.\+Case\+Node.\+set\+Shape\+Transparency (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{transparency }\end{DoxyParamCaption})}
+
+
+
+Method for setting the transparency for the shape of this case. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em transparency} & \mbox{[}float\mbox{]} The value of transparency \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\hypertarget{a00089_a18f8a870b09f2ec7c25bde6da6ad4d77}{}\label{a00089_a18f8a870b09f2ec7c25bde6da6ad4d77} 
+\index{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}!set\+Tecplot\+Mode@{set\+Tecplot\+Mode}}
+\index{set\+Tecplot\+Mode@{set\+Tecplot\+Mode}!data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}}
+\subsubsection{\texorpdfstring{set\+Tecplot\+Mode()}{setTecplotMode()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+node.\+Case\+Node.\+set\+Tecplot\+Mode (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{mode }\end{DoxyParamCaption})}
+
+
+
+Method for setting the current state of mode the tecplot graphics for this case. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & \mbox{[}str\mbox{]} The mode for this case. Can be \char`\"{}neutral\char`\"{} or \char`\"{}standard\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\hypertarget{a00089_aca41f53412a5bfdc6e3ced0ddaf3d2b3}{}\label{a00089_aca41f53412a5bfdc6e3ced0ddaf3d2b3} 
+\index{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}!set\+Tecplot\+Saved\+Style\+List@{set\+Tecplot\+Saved\+Style\+List}}
+\index{set\+Tecplot\+Saved\+Style\+List@{set\+Tecplot\+Saved\+Style\+List}!data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}}
+\subsubsection{\texorpdfstring{set\+Tecplot\+Saved\+Style\+List()}{setTecplotSavedStyleList()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+node.\+Case\+Node.\+set\+Tecplot\+Saved\+Style\+List (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tecplot\+\_\+list }\end{DoxyParamCaption})}
+
+
+
+Method for setting the saved tecplot graphics line-\/styles of this case. 
+
+See datastructure.\+case\+\_\+node.\+tecplot\+Saved\+Style\+List()
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}list\mbox{]}} & List of tecplot graphics line-\/styles to save \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\hypertarget{a00089_a7bf258efc68a0aa850fd68d937b54d44}{}\label{a00089_a7bf258efc68a0aa850fd68d937b54d44} 
+\index{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}!set\+Tecplot\+Visibility@{set\+Tecplot\+Visibility}}
+\index{set\+Tecplot\+Visibility@{set\+Tecplot\+Visibility}!data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}}
+\subsubsection{\texorpdfstring{set\+Tecplot\+Visibility()}{setTecplotVisibility()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+node.\+Case\+Node.\+set\+Tecplot\+Visibility (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{visibility }\end{DoxyParamCaption})}
+
+
+
+Method for setting a state for the tecplot graphics for this case. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em visibility} & \mbox{[}str\mbox{]} The visibility for this case. Can be \char`\"{}visible\char`\"{} or \char`\"{}invisible\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\hypertarget{a00089_aedc74c039a8da3960544f0694e2379b0}{}\label{a00089_aedc74c039a8da3960544f0694e2379b0} 
+\index{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}!shape\+Color@{shape\+Color}}
+\index{shape\+Color@{shape\+Color}!data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}}
+\subsubsection{\texorpdfstring{shape\+Color()}{shapeColor()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+node.\+Case\+Node.\+shape\+Color (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Method for getting the color for the shape of this case. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{[}int\mbox{]} The index of the color list of occ\+\_\+modules.\+shapeproperties.\+shape\+\_\+colorlist 
+\end{DoxyReturn}
+\hypertarget{a00089_ad3bd18eb2babab717bc4bd7a48ddbcb2}{}\label{a00089_ad3bd18eb2babab717bc4bd7a48ddbcb2} 
+\index{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}!shape\+H\+A\+IS@{shape\+H\+A\+IS}}
+\index{shape\+H\+A\+IS@{shape\+H\+A\+IS}!data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}}
+\subsubsection{\texorpdfstring{shape\+H\+A\+I\+S()}{shapeHAIS()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+node.\+Case\+Node.\+shape\+H\+A\+IS (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Method for retrieving the handle of A\+I\+S\+\_\+\+Shape for the node. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{[}Handle\+\_\+\+A\+I\+S\+\_\+\+Interactive\+Object\mbox{]} The A\+I\+S\+\_\+shape Handle. 
+\end{DoxyReturn}
+\hypertarget{a00089_a333ce56e7787cb1d23974a75182facca}{}\label{a00089_a333ce56e7787cb1d23974a75182facca} 
+\index{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}!shape\+Quality@{shape\+Quality}}
+\index{shape\+Quality@{shape\+Quality}!data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}}
+\subsubsection{\texorpdfstring{shape\+Quality()}{shapeQuality()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+node.\+Case\+Node.\+shape\+Quality (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Method for getting the quality for the shape of this case. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{[}float\mbox{]} The quality of the shape of this case 
+\end{DoxyReturn}
+\hypertarget{a00089_acc05e6147aac463ecd4b8073a050a54e}{}\label{a00089_acc05e6147aac463ecd4b8073a050a54e} 
+\index{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}!shape\+Transformation@{shape\+Transformation}}
+\index{shape\+Transformation@{shape\+Transformation}!data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}}
+\subsubsection{\texorpdfstring{shape\+Transformation()}{shapeTransformation()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+node.\+Case\+Node.\+shape\+Transformation (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Method for getting the transformation for the shape of this case. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{[}list\mbox{]} The list of coordinates. 
+\end{DoxyReturn}
+\hypertarget{a00089_a7ee651fb0c3759df3d639ca19f70710d}{}\label{a00089_a7ee651fb0c3759df3d639ca19f70710d} 
+\index{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}!shape\+Transparency@{shape\+Transparency}}
+\index{shape\+Transparency@{shape\+Transparency}!data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}}
+\subsubsection{\texorpdfstring{shape\+Transparency()}{shapeTransparency()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+node.\+Case\+Node.\+shape\+Transparency (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Method for getting the transparency for the shape of this case. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{[}float\mbox{]} The transparency 
+\end{DoxyReturn}
+\hypertarget{a00089_ac8139ea04504dbaedeeb295d2db40cd7}{}\label{a00089_ac8139ea04504dbaedeeb295d2db40cd7} 
+\index{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}!tecplot\+Is\+Neutral@{tecplot\+Is\+Neutral}}
+\index{tecplot\+Is\+Neutral@{tecplot\+Is\+Neutral}!data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}}
+\subsubsection{\texorpdfstring{tecplot\+Is\+Neutral()}{tecplotIsNeutral()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+node.\+Case\+Node.\+tecplot\+Is\+Neutral (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Method for verifying if tecplot is neutral. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{[}bool\mbox{]} True if it is \char`\"{}neutral\char`\"{} False if it is \char`\"{}standard\char`\"{} 
+\end{DoxyReturn}
+\hypertarget{a00089_adf31e8bf3222b4c310e652a08fa4cbb5}{}\label{a00089_adf31e8bf3222b4c310e652a08fa4cbb5} 
+\index{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}!tecplot\+Is\+Visible@{tecplot\+Is\+Visible}}
+\index{tecplot\+Is\+Visible@{tecplot\+Is\+Visible}!data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}}
+\subsubsection{\texorpdfstring{tecplot\+Is\+Visible()}{tecplotIsVisible()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+node.\+Case\+Node.\+tecplot\+Is\+Visible (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Method for verifying if tecplot is visible. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{[}bool\mbox{]} True if it is \char`\"{}visible\char`\"{} False if it is \char`\"{}invisible\char`\"{} 
+\end{DoxyReturn}
+\hypertarget{a00089_a5fda7f2cc9d0dd56ad8e088447decd15}{}\label{a00089_a5fda7f2cc9d0dd56ad8e088447decd15} 
+\index{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}!tecplot\+Lists@{tecplot\+Lists}}
+\index{tecplot\+Lists@{tecplot\+Lists}!data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}}
+\subsubsection{\texorpdfstring{tecplot\+Lists()}{tecplotLists()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+node.\+Case\+Node.\+tecplot\+Lists (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Method for getting the tecplot graphics of this case. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{[}list\mbox{]} List of tecplots lines 
+\end{DoxyReturn}
+\hypertarget{a00089_aed14e2af89b145c93189f2e13b3520f9}{}\label{a00089_aed14e2af89b145c93189f2e13b3520f9} 
+\index{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}!tecplot\+Mode@{tecplot\+Mode}}
+\index{tecplot\+Mode@{tecplot\+Mode}!data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}}
+\subsubsection{\texorpdfstring{tecplot\+Mode()}{tecplotMode()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+node.\+Case\+Node.\+tecplot\+Mode (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Method for getting the current state of mode the tecplot graphics for this case. 
+
+The mode is whether all the lines in tecplot graphics are neutral -\/ black -\/ and dashed.
+
+\begin{DoxyReturn}{Returns}
+\mbox{[}str\mbox{]} The state of mode of the tecplot. Can be \char`\"{}neutral\char`\"{} or \char`\"{}standard\char`\"{} 
+\end{DoxyReturn}
+\hypertarget{a00089_ae868c48f3c348062424b040c2e7f4646}{}\label{a00089_ae868c48f3c348062424b040c2e7f4646} 
+\index{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}!tecplot\+Saved\+Style\+List@{tecplot\+Saved\+Style\+List}}
+\index{tecplot\+Saved\+Style\+List@{tecplot\+Saved\+Style\+List}!data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}}
+\subsubsection{\texorpdfstring{tecplot\+Saved\+Style\+List()}{tecplotSavedStyleList()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+node.\+Case\+Node.\+tecplot\+Saved\+Style\+List (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Method for getting the saved tecplot graphics line-\/styles of this case. 
+
+This is useful for retrieving the last line-\/style when manipulating with Core.\+tecplot\+\_\+set\+Neutral(), Core.\+tecplot\+\_\+set\+Visibility(). The program must remember it when toggling the options to save user\textquotesingle{}s preference.
+
+\begin{DoxyReturn}{Returns}
+\mbox{[}list\mbox{]} List of tecplots lines 
+\end{DoxyReturn}
+\hypertarget{a00089_aeb90281663e7094357befb23383a0d12}{}\label{a00089_aeb90281663e7094357befb23383a0d12} 
+\index{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}!tecplot\+Visibility@{tecplot\+Visibility}}
+\index{tecplot\+Visibility@{tecplot\+Visibility}!data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node@{data\+\_\+structure\+::case\+\_\+node\+::\+Case\+Node}}
+\subsubsection{\texorpdfstring{tecplot\+Visibility()}{tecplotVisibility()}}
+{\footnotesize\ttfamily def data\+\_\+structure.\+case\+\_\+node.\+Case\+Node.\+tecplot\+Visibility (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Method for getting the current state of visibility the tecplot graphics for this case. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{[}str\mbox{]} The state of the tecplot. Can be \char`\"{}visible\char`\"{} or \char`\"{}invisible\char`\"{} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+data\+\_\+structure/case\+\_\+node.\+py\end{DoxyCompactItemize}

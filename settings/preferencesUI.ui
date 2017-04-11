@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PreferencesDialog</class>
+ <widget class="QWidget" name="PreferencesDialog">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>470</width>
+    <height>530</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>470</width>
+    <height>530</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Preferences</string>
+  </property>
+  <property name="whatsThis">
+   <string/>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="inputMethodHints">
+   <set>Qt::ImhNone</set>
+  </property>
+  <layout class="QVBoxLayout" name="PreferencesDialog_vl">
+   <item>
+    <widget class="QTabWidget" name="ui_preferences_tab">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="ui_preferences_general_tab">
+      <attribute name="title">
+       <string>General</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="ui_preferences_general_tab_vl">
+       <item>
+        <widget class="QGroupBox" name="ui_preferences_general_groupbox">
+         <property name="title">
+          <string>General</string>
+         </property>
+         <layout class="QGridLayout" name="ui_preferences_general_groupbox_gl">
+          <item row="1" column="0">
+           <widget class="QGroupBox" name="self_preferences_general_outputs_groupbox">
+            <property name="toolTip">
+             <string>The ouputs checked will be displayed when loading a case. One can make exceptions when displaying IGS files.</string>
+            </property>
+            <property name="title">
+             <string>BladePro Outputs Loaded by Case</string>
+            </property>
+            <layout class="QVBoxLayout" name="self_preferences_general_outputs_groupbox_vl">
+             <item>
+              <widget class="QLabel" name="ui_preferences_general_outputs_description_lbl">
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Fields are exceptions that will not be displayed by default&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="textFormat">
+                <enum>Qt::AutoText</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QGridLayout" name="self_preferences_general_outputs_gl">
+               <item row="3" column="0">
+                <widget class="QCheckBox" name="ui_preferences_tecplot_2d_chk">
+                 <property name="text">
+                  <string>Tecplot 2D</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="ui_preferences_igs_3d_cur_exception_edit">
+                 <property name="toolTip">
+                  <string>The parts in this field will not be initially displayed in the Output Viewer when loading a IGS 3D Curves</string>
+                 </property>
+                 <property name="inputMask">
+                  <string/>
+                 </property>
+                 <property name="text">
+                  <string>HUB; SHROUD</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QCheckBox" name="ui_preferences_igs_2d_cur_chk">
+                 <property name="text">
+                  <string>IGS 2D Curves</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QCheckBox" name="ui_preferences_igs_3d_cur_chk">
+                 <property name="text">
+                  <string>IGS 3D Curves</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QCheckBox" name="ui_preferences_igs_surf_chk">
+                 <property name="text">
+                  <string>IGS Surf</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLineEdit" name="ui_preferences_igs_2d_cur_exception_edit">
+                 <property name="inputMask">
+                  <string/>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="ui_preferences_igs_surf_exception_edit">
+                 <property name="toolTip">
+                  <string>The parts in this field will not be initially displayed in the Output Viewer when loading a IGS surf</string>
+                 </property>
+                 <property name="inputMask">
+                  <string/>
+                 </property>
+                 <property name="text">
+                  <string>HUB; SHROUD; STREAM</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <spacer name="ui_preferences_general_vspacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="2" column="0">
+           <widget class="QGroupBox" name="self_preferences_general_shape_groupbox">
+            <property name="statusTip">
+             <string>Part Controls</string>
+            </property>
+            <property name="title">
+             <string>Part Controls</string>
+            </property>
+            <layout class="QVBoxLayout" name="self_preferences_general_shape_groupbox_vl">
+             <item>
+              <layout class="QGridLayout" name="ui_preferences_general_shape_gl">
+               <item row="0" column="1">
+                <widget class="QComboBox" name="ui_preferences_default_color_combo">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>23</height>
+                  </size>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Golden</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Blue</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Red</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>White</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Black</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Yellow</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QDoubleSpinBox" name="ui_preferences_default_quality_dspn">
+                 <property name="enabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>23</height>
+                  </size>
+                 </property>
+                 <property name="autoFillBackground">
+                  <bool>false</bool>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                 </property>
+                 <property name="minimum">
+                  <double>0.010000000000000</double>
+                 </property>
+                 <property name="singleStep">
+                  <double>0.200000000000000</double>
+                 </property>
+                 <property name="value">
+                  <double>1.000000000000000</double>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QDoubleSpinBox" name="ui_preferences_default_transparency_dspn">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>23</height>
+                  </size>
+                 </property>
+                 <property name="maximum">
+                  <double>1.000000000000000</double>
+                 </property>
+                 <property name="singleStep">
+                  <double>0.100000000000000</double>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="ui_preferences_transparency_lbl_2">
+                 <property name="text">
+                  <string>Default Shape Quality</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="ui_preferences_default_color_lbl">
+                 <property name="text">
+                  <string>Default Shape Color</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="ui_preferences_transparency_lbl">
+                 <property name="text">
+                  <string>Default Shape Transparency</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QGroupBox" name="self_preferences_general_display_groupbox">
+            <property name="statusTip">
+             <string>Display controls</string>
+            </property>
+            <property name="title">
+             <string>Display</string>
+            </property>
+            <layout class="QVBoxLayout" name="ui_preferences_general_groupbox_vl">
+             <item>
+              <layout class="QGridLayout" name="self_preferences_general_display_gl">
+               <item row="1" column="1">
+                <widget class="QDoubleSpinBox" name="ui_preferences_zoom_dpsn">
+                 <property name="enabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="toolTip">
+                  <string>Percentage of zooming by mouse wheel scroll</string>
+                 </property>
+                 <property name="statusTip">
+                  <string>Amount of percentage of zooming by wheel scroll</string>
+                 </property>
+                 <property name="autoFillBackground">
+                  <bool>false</bool>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                 </property>
+                 <property name="minimum">
+                  <double>1.010000000000000</double>
+                 </property>
+                 <property name="singleStep">
+                  <double>0.100000000000000</double>
+                 </property>
+                 <property name="value">
+                  <double>1.010000000000000</double>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="ui_preferences_zoom_lbl">
+                 <property name="statusTip">
+                  <string>Zoom Step: The amount of zoom when scrolling mouse's wheel</string>
+                 </property>
+                 <property name="text">
+                  <string>Zoom Step</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="ui_preferences_bladepro_tab">
+      <attribute name="title">
+       <string>BladePro</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QGroupBox" name="ui_preferences_bladepro_groupbox">
+         <property name="title">
+          <string>BladePro</string>
+         </property>
+         <layout class="QGridLayout" name="ui_preferences_bladepro_groupbox_vl">
+          <item row="1" column="1">
+           <layout class="QHBoxLayout" name="ui_preferences_bladepro_groupbox_vl_hl">
+            <item>
+             <widget class="QLabel" name="ui_preferences_running_bladepro_version_lbl">
+              <property name="text">
+               <string>Running Version</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="ui_preferences_running_bladepro_version_edit">
+              <property name="text">
+               <string>bladepro</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="ui_preferences_general_vspacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="ui_preferences_okcancelapply_hl">
+     <item>
+      <spacer name="ui_preferences_okcancelapply_hspacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="ui_preferences_ok_btn">
+       <property name="text">
+        <string>OK</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="ui_preferences_cancel_btn">
+       <property name="text">
+        <string>Cancel</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="ui_preferences_apply_btn">
+       <property name="text">
+        <string>Apply</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,9 @@
+READ/CFT-GEO
+C:/Users/FASX781/Desktop/BladePy/bladepro_modules/cftexample.txt
+0
+0.00
+
+OUTPUT/TECPLOT/3D
+
+OUTPUT/TECPLOT/STREAMS
+

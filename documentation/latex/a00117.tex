@@ -1,0 +1,193 @@
+\hypertarget{a00117}{}\section{tecplot\+\_\+modules.\+tecplot\+\_\+display.\+Tec\+Plot\+Window Class Reference}
+\label{a00117}\index{tecplot\+\_\+modules.\+tecplot\+\_\+display.\+Tec\+Plot\+Window@{tecplot\+\_\+modules.\+tecplot\+\_\+display.\+Tec\+Plot\+Window}}
+
+
+Class for creating a G\+UI for the Blade\+Py Tecplot\+Viewer Widget.  
+
+
+
+
+Inheritance diagram for tecplot\+\_\+modules.\+tecplot\+\_\+display.\+Tec\+Plot\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{a00116}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{a00117_abc270dcf6e8aaa3a645ae0258c4a9e5e}{}\label{a00117_abc270dcf6e8aaa3a645ae0258c4a9e5e} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, parent=None, Output\+Viewer\+Widget=None)
+\item 
+def \hyperlink{a00117_a6b4350a2c6ee537dba6bbe1549778636}{open\+Tecplot} (self, tecplot\+\_\+path=None)
+\begin{DoxyCompactList}\small\item\em Calls the function for reading tecplot csv files of \hyperlink{a00125}{tecplot\+\_\+reader.\+Tec\+Plot\+Core}. \end{DoxyCompactList}\item 
+def \hyperlink{a00117_a62c9724fbeda8d8780e57559bada3282}{plot\+Function} (self)
+\begin{DoxyCompactList}\small\item\em Calls tecplot\+\_\+core functions and saves it in instance variables and adjust graphics settings like padding. \end{DoxyCompactList}\item 
+def \hyperlink{a00117_ae792d997329b65cfed0b8a0a5feaa1a2}{tecplot\+Display\+\_\+1} (self)
+\begin{DoxyCompactList}\small\item\em Methods that are going to be called by the the Tecplot\+Widget. \end{DoxyCompactList}\item 
+def \hyperlink{a00117_aec1f3f862b488e5f66161ca7241908c1}{tecplot\+Display\+\_\+2} (self)
+\begin{DoxyCompactList}\small\item\em Methods that are going to be called by the the Tecplot\+Widget. \end{DoxyCompactList}\item 
+def \hyperlink{a00117_ae29c235476c3ca1ff19f4b933b86ed86}{tecplot\+Display\+\_\+3} (self)
+\begin{DoxyCompactList}\small\item\em Methods that are going to be called by the the Tecplot\+Widget. \end{DoxyCompactList}\item 
+def \hyperlink{a00117_acdc9dc387494507084a2ab2cc0c8d9ac}{tecplot\+Display\+\_\+4} (self)
+\begin{DoxyCompactList}\small\item\em Methods that are going to be called by the the Tecplot\+Widget. \end{DoxyCompactList}\item 
+def \hyperlink{a00117_ad80163041f7884f536d1421860c4adc2}{set\+Neutral} (self)
+\begin{DoxyCompactList}\small\item\em Toggles tecplot display to neutral. \end{DoxyCompactList}\item 
+def \hyperlink{a00117_ae50e0f3c4051d791ed30a2e9de5233ea}{set\+Visibility} (self)
+\begin{DoxyCompactList}\small\item\em Toggles tecplot display to visible or invisible for the selected case. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{a00117_a97bc6a6c7074f874028cd2afbbad4082}{}\label{a00117_a97bc6a6c7074f874028cd2afbbad4082} 
+{\bfseries tecplot\+\_\+blade\+\_\+plotlines}
+\item 
+\hypertarget{a00117_a103d285631a0d45198d834c8a98cf72a}{}\label{a00117_a103d285631a0d45198d834c8a98cf72a} 
+{\bfseries tecplot\+\_\+stream\+\_\+plotlines}
+\item 
+\hypertarget{a00117_a20a9b77de151d414f78ab14a5ee30143}{}\label{a00117_a20a9b77de151d414f78ab14a5ee30143} 
+{\bfseries tecplot\+\_\+profile\+\_\+plotlines}
+\item 
+\hypertarget{a00117_ad430a4835103d6c1e22b1d81a829bc74}{}\label{a00117_ad430a4835103d6c1e22b1d81a829bc74} 
+{\bfseries tecplot\+\_\+mean\+\_\+plotlines}
+\item 
+\hypertarget{a00117_a552371e32854caef73cb7386140ebab8}{}\label{a00117_a552371e32854caef73cb7386140ebab8} 
+{\bfseries tecplot\+\_\+meanbeta\+\_\+plotlines}
+\item 
+\hypertarget{a00117_a3291e8bf0c5c69a20e3e9299dc363db2}{}\label{a00117_a3291e8bf0c5c69a20e3e9299dc363db2} 
+{\bfseries tecplot\+\_\+thickness\+\_\+plotlines}
+\item 
+\hypertarget{a00117_a03539a28f4d15d303da92341074ab6b6}{}\label{a00117_a03539a28f4d15d303da92341074ab6b6} 
+{\bfseries op\+\_\+viewer}
+\item 
+\hypertarget{a00117_a7d3fabc52fc4c2d52b9aa4efea25131a}{}\label{a00117_a7d3fabc52fc4c2d52b9aa4efea25131a} 
+{\bfseries core}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for creating a G\+UI for the Blade\+Py Tecplot\+Viewer Widget. 
+
+A object of this class will be created and integrated to the Output\+Viewer. This class has the function of displaying tecplot graphics, and managing its appearance in the functions \hyperlink{a00117_ae50e0f3c4051d791ed30a2e9de5233ea}{set\+Visibility()} and \hyperlink{a00117_ad80163041f7884f536d1421860c4adc2}{set\+Neutral()}. The padding, label and adjustments are made when plotting in \hyperlink{a00117_a62c9724fbeda8d8780e57559bada3282}{plot\+Function()}. This object instantiates composition association object of \hyperlink{a00125}{tecplot\+\_\+reader.\+Tec\+Plot\+Core} class. The object of this class is used for reading tecplot csv files.
+
+\hyperlink{a00117_a62c9724fbeda8d8780e57559bada3282}{plot\+Function()} actually has the objective of directing the plots to the right canvas. The plotting and line creation are in fact made in methods \hyperlink{a00117_ae792d997329b65cfed0b8a0a5feaa1a2}{tecplot\+Display\+\_\+1()}, \hyperlink{a00117_aec1f3f862b488e5f66161ca7241908c1}{tecplot\+Display\+\_\+2()}, \hyperlink{a00117_ae29c235476c3ca1ff19f4b933b86ed86}{tecplot\+Display\+\_\+3()}, and \hyperlink{a00117_acdc9dc387494507084a2ab2cc0c8d9ac}{tecplot\+Display\+\_\+4()}.
+
+The reason for having four different methods for plotting is the fact that each canvas has it own rule for plotting.
+
+This class is responsible for adding functions to the inherited \hyperlink{a00121}{tecplot\+\_\+display\+U\+I.\+Ui\+\_\+\+Main\+Window} function-\/less layout created in Qt Designer. 
+
+\subsection{Member Function Documentation}
+\hypertarget{a00117_a6b4350a2c6ee537dba6bbe1549778636}{}\label{a00117_a6b4350a2c6ee537dba6bbe1549778636} 
+\index{tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window@{tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window}!open\+Tecplot@{open\+Tecplot}}
+\index{open\+Tecplot@{open\+Tecplot}!tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window@{tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window}}
+\subsubsection{\texorpdfstring{open\+Tecplot()}{openTecplot()}}
+{\footnotesize\ttfamily def tecplot\+\_\+modules.\+tecplot\+\_\+display.\+Tec\+Plot\+Window.\+open\+Tecplot (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tecplot\+\_\+path = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Calls the function for reading tecplot csv files of \hyperlink{a00125}{tecplot\+\_\+reader.\+Tec\+Plot\+Core}. 
+
+Then calls \hyperlink{a00117_a62c9724fbeda8d8780e57559bada3282}{plot\+Function()} to plot the read files.
+
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\hypertarget{a00117_a62c9724fbeda8d8780e57559bada3282}{}\label{a00117_a62c9724fbeda8d8780e57559bada3282} 
+\index{tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window@{tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window}!plot\+Function@{plot\+Function}}
+\index{plot\+Function@{plot\+Function}!tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window@{tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window}}
+\subsubsection{\texorpdfstring{plot\+Function()}{plotFunction()}}
+{\footnotesize\ttfamily def tecplot\+\_\+modules.\+tecplot\+\_\+display.\+Tec\+Plot\+Window.\+plot\+Function (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Calls tecplot\+\_\+core functions and saves it in instance variables and adjust graphics settings like padding. 
+
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\hypertarget{a00117_ad80163041f7884f536d1421860c4adc2}{}\label{a00117_ad80163041f7884f536d1421860c4adc2} 
+\index{tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window@{tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window}!set\+Neutral@{set\+Neutral}}
+\index{set\+Neutral@{set\+Neutral}!tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window@{tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window}}
+\subsubsection{\texorpdfstring{set\+Neutral()}{setNeutral()}}
+{\footnotesize\ttfamily def tecplot\+\_\+modules.\+tecplot\+\_\+display.\+Tec\+Plot\+Window.\+set\+Neutral (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{None }\end{DoxyParamCaption})}
+
+
+
+Toggles tecplot display to neutral. 
+
+Sets to neutral mode -\/ black and dashed lines -\/ or to standard for the selected case. For hub and shroud there is no neutral state. Only stream lines will become dashed a blacked.
+
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\hypertarget{a00117_ae50e0f3c4051d791ed30a2e9de5233ea}{}\label{a00117_ae50e0f3c4051d791ed30a2e9de5233ea} 
+\index{tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window@{tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window}!set\+Visibility@{set\+Visibility}}
+\index{set\+Visibility@{set\+Visibility}!tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window@{tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window}}
+\subsubsection{\texorpdfstring{set\+Visibility()}{setVisibility()}}
+{\footnotesize\ttfamily def tecplot\+\_\+modules.\+tecplot\+\_\+display.\+Tec\+Plot\+Window.\+set\+Visibility (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{None }\end{DoxyParamCaption})}
+
+
+
+Toggles tecplot display to visible or invisible for the selected case. 
+
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\hypertarget{a00117_ae792d997329b65cfed0b8a0a5feaa1a2}{}\label{a00117_ae792d997329b65cfed0b8a0a5feaa1a2} 
+\index{tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window@{tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window}!tecplot\+Display\+\_\+1@{tecplot\+Display\+\_\+1}}
+\index{tecplot\+Display\+\_\+1@{tecplot\+Display\+\_\+1}!tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window@{tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window}}
+\subsubsection{\texorpdfstring{tecplot\+Display\+\_\+1()}{tecplotDisplay\_1()}}
+{\footnotesize\ttfamily def tecplot\+\_\+modules.\+tecplot\+\_\+display.\+Tec\+Plot\+Window.\+tecplot\+Display\+\_\+1 (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Methods that are going to be called by the the Tecplot\+Widget. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{[}list\mbox{]} List of blade plotlines and list of lists of Stream Lines plotlines 
+\end{DoxyReturn}
+\hypertarget{a00117_aec1f3f862b488e5f66161ca7241908c1}{}\label{a00117_aec1f3f862b488e5f66161ca7241908c1} 
+\index{tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window@{tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window}!tecplot\+Display\+\_\+2@{tecplot\+Display\+\_\+2}}
+\index{tecplot\+Display\+\_\+2@{tecplot\+Display\+\_\+2}!tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window@{tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window}}
+\subsubsection{\texorpdfstring{tecplot\+Display\+\_\+2()}{tecplotDisplay\_2()}}
+{\footnotesize\ttfamily def tecplot\+\_\+modules.\+tecplot\+\_\+display.\+Tec\+Plot\+Window.\+tecplot\+Display\+\_\+2 (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Methods that are going to be called by the the Tecplot\+Widget. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{[}list\mbox{]} List of lists of blade profiles plotlines and list of lists of Mean Lines plotlines 
+\end{DoxyReturn}
+\hypertarget{a00117_ae29c235476c3ca1ff19f4b933b86ed86}{}\label{a00117_ae29c235476c3ca1ff19f4b933b86ed86} 
+\index{tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window@{tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window}!tecplot\+Display\+\_\+3@{tecplot\+Display\+\_\+3}}
+\index{tecplot\+Display\+\_\+3@{tecplot\+Display\+\_\+3}!tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window@{tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window}}
+\subsubsection{\texorpdfstring{tecplot\+Display\+\_\+3()}{tecplotDisplay\_3()}}
+{\footnotesize\ttfamily def tecplot\+\_\+modules.\+tecplot\+\_\+display.\+Tec\+Plot\+Window.\+tecplot\+Display\+\_\+3 (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Methods that are going to be called by the the Tecplot\+Widget. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{[}list\mbox{]} List of lists of thickness plotlines 
+\end{DoxyReturn}
+\hypertarget{a00117_acdc9dc387494507084a2ab2cc0c8d9ac}{}\label{a00117_acdc9dc387494507084a2ab2cc0c8d9ac} 
+\index{tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window@{tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window}!tecplot\+Display\+\_\+4@{tecplot\+Display\+\_\+4}}
+\index{tecplot\+Display\+\_\+4@{tecplot\+Display\+\_\+4}!tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window@{tecplot\+\_\+modules\+::tecplot\+\_\+display\+::\+Tec\+Plot\+Window}}
+\subsubsection{\texorpdfstring{tecplot\+Display\+\_\+4()}{tecplotDisplay\_4()}}
+{\footnotesize\ttfamily def tecplot\+\_\+modules.\+tecplot\+\_\+display.\+Tec\+Plot\+Window.\+tecplot\+Display\+\_\+4 (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Methods that are going to be called by the the Tecplot\+Widget. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{[}list\mbox{]} List of lists of thickness plotlines 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+tecplot\+\_\+modules/tecplot\+\_\+display.\+py\end{DoxyCompactItemize}
