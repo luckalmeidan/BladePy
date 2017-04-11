@@ -97,7 +97,7 @@ class BladePyCore(QtGui.QMainWindow, output_viewerUI.Ui_MainWindow):
         self.previous_case_node = None
 
         ## This attribute is one that is used by the program to tell whether the user is managing a shape or sub-shape
-        self.selectionMode = ""
+        self.selectionMode = "something"
 
         ## This attribute is a list that contains all shapes loaded in the program
         self.master_shape_list = []
